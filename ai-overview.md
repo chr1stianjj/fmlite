@@ -43,9 +43,9 @@ project/
 
 ### Backend
 - Python 3
-- Flask
-- Flask-CORS
-- Virtual environment (venv)
+- FastAPI (Python)
+- Uvicorn (to run the server)
+- CORS middleware
 
 ### Frontend
 - Node.js
