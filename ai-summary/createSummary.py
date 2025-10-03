@@ -3,7 +3,7 @@ import json
 
 # AI prompt
 AI_INSTRUCTION = (
-    "This is a rest"
+    "This is a test"
     "Read all files and folders in this JSON hierarchy to understand their purpose and placement. "
     "Pay special attention to the ai-overview.md file at the root and execute its ai instructions. "
 )
