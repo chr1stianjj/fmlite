@@ -1,0 +1,720 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Player 1",
+      "dob": "1992-11-27",
+      "nationality": "Argentina",
+      "attributes": {
+        "shooting": 82,
+        "passing": 66,
+        "speed": 70,
+        "stamina": 85
+      },
+      "teamId": 1
+    },
+    {
+      "id": 2,
+      "name": "Player 2",
+      "dob": "1992-02-01",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 88,
+        "passing": 90,
+        "speed": 75,
+        "stamina": 71
+      },
+      "teamId": 1
+    },
+    {
+      "id": 3,
+      "name": "Player 3",
+      "dob": "2001-11-28",
+      "nationality": "Germany",
+      "attributes": {
+        "shooting": 83,
+        "passing": 83,
+        "speed": 66,
+        "stamina": 68
+      },
+      "teamId": 1
+    },
+    {
+      "id": 4,
+      "name": "Player 4",
+      "dob": "1998-12-13",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 90,
+        "passing": 89,
+        "speed": 86,
+        "stamina": 82
+      },
+      "teamId": 1
+    },
+    {
+      "id": 5,
+      "name": "Player 5",
+      "dob": "1993-11-03",
+      "nationality": "Brazil",
+      "attributes": {
+        "shooting": 85,
+        "passing": 76,
+        "speed": 79,
+        "stamina": 78
+      },
+      "teamId": 1
+    },
+    {
+      "id": 6,
+      "name": "Player 6",
+      "dob": "1996-08-12",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 72,
+        "passing": 69,
+        "speed": 90,
+        "stamina": 74
+      },
+      "teamId": 1
+    },
+    {
+      "id": 7,
+      "name": "Player 7",
+      "dob": "2002-08-08",
+      "nationality": "Argentina",
+      "attributes": {
+        "shooting": 86,
+        "passing": 80,
+        "speed": 85,
+        "stamina": 81
+      },
+      "teamId": 1
+    },
+    {
+      "id": 8,
+      "name": "Player 8",
+      "dob": "2001-06-24",
+      "nationality": "Argentina",
+      "attributes": {
+        "shooting": 80,
+        "passing": 84,
+        "speed": 85,
+        "stamina": 79
+      },
+      "teamId": 1
+    },
+    {
+      "id": 9,
+      "name": "Player 9",
+      "dob": "2000-09-11",
+      "nationality": "Brazil",
+      "attributes": {
+        "shooting": 70,
+        "passing": 84,
+        "speed": 70,
+        "stamina": 66
+      },
+      "teamId": 1
+    },
+    {
+      "id": 10,
+      "name": "Player 10",
+      "dob": "2002-07-21",
+      "nationality": "Brazil",
+      "attributes": {
+        "shooting": 73,
+        "passing": 71,
+        "speed": 66,
+        "stamina": 83
+      },
+      "teamId": 1
+    },
+    {
+      "id": 11,
+      "name": "Player 11",
+      "dob": "1995-11-27",
+      "nationality": "Brazil",
+      "attributes": {
+        "shooting": 70,
+        "passing": 73,
+        "speed": 85,
+        "stamina": 71
+      },
+      "teamId": 1
+    },
+    {
+      "id": 12,
+      "name": "Player 12",
+      "dob": "1999-09-15",
+      "nationality": "Brazil",
+      "attributes": {
+        "shooting": 79,
+        "passing": 72,
+        "speed": 87,
+        "stamina": 79
+      },
+      "teamId": 1
+    },
+    {
+      "id": 13,
+      "name": "Player 13",
+      "dob": "1997-06-21",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 74,
+        "passing": 73,
+        "speed": 73,
+        "stamina": 66
+      },
+      "teamId": 2
+    },
+    {
+      "id": 14,
+      "name": "Player 14",
+      "dob": "1991-03-10",
+      "nationality": "Germany",
+      "attributes": {
+        "shooting": 89,
+        "passing": 78,
+        "speed": 80,
+        "stamina": 86
+      },
+      "teamId": 2
+    },
+    {
+      "id": 15,
+      "name": "Player 15",
+      "dob": "1996-05-27",
+      "nationality": "Brazil",
+      "attributes": {
+        "shooting": 71,
+        "passing": 77,
+        "speed": 77,
+        "stamina": 73
+      },
+      "teamId": 2
+    },
+    {
+      "id": 16,
+      "name": "Player 16",
+      "dob": "1994-06-11",
+      "nationality": "Germany",
+      "attributes": {
+        "shooting": 81,
+        "passing": 82,
+        "speed": 68,
+        "stamina": 80
+      },
+      "teamId": 2
+    },
+    {
+      "id": 17,
+      "name": "Player 17",
+      "dob": "1991-09-26",
+      "nationality": "Argentina",
+      "attributes": {
+        "shooting": 76,
+        "passing": 72,
+        "speed": 86,
+        "stamina": 71
+      },
+      "teamId": 2
+    },
+    {
+      "id": 18,
+      "name": "Player 18",
+      "dob": "1990-07-17",
+      "nationality": "Brazil",
+      "attributes": {
+        "shooting": 75,
+        "passing": 77,
+        "speed": 68,
+        "stamina": 75
+      },
+      "teamId": 2
+    },
+    {
+      "id": 19,
+      "name": "Player 19",
+      "dob": "1998-02-26",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 82,
+        "passing": 70,
+        "speed": 88,
+        "stamina": 79
+      },
+      "teamId": 2
+    },
+    {
+      "id": 20,
+      "name": "Player 20",
+      "dob": "1992-11-27",
+      "nationality": "Germany",
+      "attributes": {
+        "shooting": 90,
+        "passing": 85,
+        "speed": 74,
+        "stamina": 65
+      },
+      "teamId": 2
+    },
+    {
+      "id": 21,
+      "name": "Player 21",
+      "dob": "1997-07-18",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 83,
+        "passing": 82,
+        "speed": 72,
+        "stamina": 83
+      },
+      "teamId": 2
+    },
+    {
+      "id": 22,
+      "name": "Player 22",
+      "dob": "1993-11-10",
+      "nationality": "Germany",
+      "attributes": {
+        "shooting": 76,
+        "passing": 75,
+        "speed": 67,
+        "stamina": 71
+      },
+      "teamId": 2
+    },
+    {
+      "id": 23,
+      "name": "Player 23",
+      "dob": "1991-08-20",
+      "nationality": "Brazil",
+      "attributes": {
+        "shooting": 82,
+        "passing": 85,
+        "speed": 87,
+        "stamina": 87
+      },
+      "teamId": 2
+    },
+    {
+      "id": 24,
+      "name": "Player 24",
+      "dob": "1998-02-17",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 84,
+        "passing": 90,
+        "speed": 77,
+        "stamina": 85
+      },
+      "teamId": 2
+    },
+    {
+      "id": 25,
+      "name": "Player 25",
+      "dob": "1996-07-01",
+      "nationality": "Argentina",
+      "attributes": {
+        "shooting": 69,
+        "passing": 70,
+        "speed": 84,
+        "stamina": 69
+      },
+      "teamId": 3
+    },
+    {
+      "id": 26,
+      "name": "Player 26",
+      "dob": "2000-06-01",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 85,
+        "passing": 79,
+        "speed": 80,
+        "stamina": 86
+      },
+      "teamId": 3
+    },
+    {
+      "id": 27,
+      "name": "Player 27",
+      "dob": "1995-07-05",
+      "nationality": "Germany",
+      "attributes": {
+        "shooting": 86,
+        "passing": 89,
+        "speed": 72,
+        "stamina": 76
+      },
+      "teamId": 3
+    },
+    {
+      "id": 28,
+      "name": "Player 28",
+      "dob": "1993-08-28",
+      "nationality": "Argentina",
+      "attributes": {
+        "shooting": 72,
+        "passing": 70,
+        "speed": 79,
+        "stamina": 66
+      },
+      "teamId": 3
+    },
+    {
+      "id": 29,
+      "name": "Player 29",
+      "dob": "2001-06-02",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 79,
+        "passing": 86,
+        "speed": 70,
+        "stamina": 79
+      },
+      "teamId": 3
+    },
+    {
+      "id": 30,
+      "name": "Player 30",
+      "dob": "1993-11-25",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 90,
+        "passing": 85,
+        "speed": 74,
+        "stamina": 74
+      },
+      "teamId": 3
+    },
+    {
+      "id": 31,
+      "name": "Player 31",
+      "dob": "1993-08-15",
+      "nationality": "Brazil",
+      "attributes": {
+        "shooting": 83,
+        "passing": 87,
+        "speed": 83,
+        "stamina": 87
+      },
+      "teamId": 3
+    },
+    {
+      "id": 32,
+      "name": "Player 32",
+      "dob": "1992-06-07",
+      "nationality": "Argentina",
+      "attributes": {
+        "shooting": 83,
+        "passing": 65,
+        "speed": 77,
+        "stamina": 67
+      },
+      "teamId": 3
+    },
+    {
+      "id": 33,
+      "name": "Player 33",
+      "dob": "1996-09-27",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 72,
+        "passing": 81,
+        "speed": 79,
+        "stamina": 80
+      },
+      "teamId": 3
+    },
+    {
+      "id": 34,
+      "name": "Player 34",
+      "dob": "2001-11-14",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 82,
+        "passing": 65,
+        "speed": 76,
+        "stamina": 69
+      },
+      "teamId": 3
+    },
+    {
+      "id": 35,
+      "name": "Player 35",
+      "dob": "1994-12-12",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 78,
+        "passing": 87,
+        "speed": 82,
+        "stamina": 86
+      },
+      "teamId": 3
+    },
+    {
+      "id": 36,
+      "name": "Player 36",
+      "dob": "1993-01-07",
+      "nationality": "Germany",
+      "attributes": {
+        "shooting": 87,
+        "passing": 67,
+        "speed": 76,
+        "stamina": 76
+      },
+      "teamId": 3
+    },
+    {
+      "id": 37,
+      "name": "Player 37",
+      "dob": "1995-04-26",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 83,
+        "passing": 86,
+        "speed": 66,
+        "stamina": 87
+      },
+      "teamId": 4
+    },
+    {
+      "id": 38,
+      "name": "Player 38",
+      "dob": "2001-05-25",
+      "nationality": "Argentina",
+      "attributes": {
+        "shooting": 68,
+        "passing": 89,
+        "speed": 82,
+        "stamina": 76
+      },
+      "teamId": 4
+    },
+    {
+      "id": 39,
+      "name": "Player 39",
+      "dob": "1997-03-28",
+      "nationality": "Brazil",
+      "attributes": {
+        "shooting": 69,
+        "passing": 82,
+        "speed": 82,
+        "stamina": 77
+      },
+      "teamId": 4
+    },
+    {
+      "id": 40,
+      "name": "Player 40",
+      "dob": "2000-07-12",
+      "nationality": "Argentina",
+      "attributes": {
+        "shooting": 90,
+        "passing": 80,
+        "speed": 86,
+        "stamina": 65
+      },
+      "teamId": 4
+    },
+    {
+      "id": 41,
+      "name": "Player 41",
+      "dob": "1997-06-25",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 78,
+        "passing": 82,
+        "speed": 67,
+        "stamina": 79
+      },
+      "teamId": 4
+    },
+    {
+      "id": 42,
+      "name": "Player 42",
+      "dob": "1998-08-10",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 81,
+        "passing": 65,
+        "speed": 71,
+        "stamina": 82
+      },
+      "teamId": 4
+    },
+    {
+      "id": 43,
+      "name": "Player 43",
+      "dob": "1997-03-20",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 79,
+        "passing": 81,
+        "speed": 72,
+        "stamina": 73
+      },
+      "teamId": 4
+    },
+    {
+      "id": 44,
+      "name": "Player 44",
+      "dob": "1992-03-24",
+      "nationality": "Argentina",
+      "attributes": {
+        "shooting": 78,
+        "passing": 84,
+        "speed": 82,
+        "stamina": 74
+      },
+      "teamId": 4
+    },
+    {
+      "id": 45,
+      "name": "Player 45",
+      "dob": "2000-09-13",
+      "nationality": "Brazil",
+      "attributes": {
+        "shooting": 70,
+        "passing": 86,
+        "speed": 79,
+        "stamina": 86
+      },
+      "teamId": 4
+    },
+    {
+      "id": 46,
+      "name": "Player 46",
+      "dob": "1997-02-25",
+      "nationality": "Brazil",
+      "attributes": {
+        "shooting": 86,
+        "passing": 79,
+        "speed": 74,
+        "stamina": 68
+      },
+      "teamId": 4
+    },
+    {
+      "id": 47,
+      "name": "Player 47",
+      "dob": "1991-02-19",
+      "nationality": "Spain",
+      "attributes": {
+        "shooting": 86,
+        "passing": 80,
+        "speed": 68,
+        "stamina": 77
+      },
+      "teamId": 4
+    },
+    {
+      "id": 48,
+      "name": "Player 48",
+      "dob": "1997-12-09",
+      "nationality": "Germany",
+      "attributes": {
+        "shooting": 75,
+        "passing": 80,
+        "speed": 67,
+        "stamina": 86
+      },
+      "teamId": 4
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "name": "Team Argentina",
+      "playerIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Team Brazil",
+      "playerIds": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Team Spain",
+      "playerIds": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Team Germany",
+      "playerIds": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": 1,
+      "homeTeamId": 1,
+      "awayTeamId": 2,
+      "homeScore": 0,
+      "awayScore": 3,
+      "date": "2025-10-01"
+    },
+    {
+      "id": 2,
+      "homeTeamId": 3,
+      "awayTeamId": 4,
+      "homeScore": 2,
+      "awayScore": 3,
+      "date": "2025-10-02"
+    }
+  ]
+}
