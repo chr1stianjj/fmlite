@@ -16,22 +16,26 @@ Return 'No readme changes needed' if there are no factual errors. Otherwise, pro
 ## Structure
 
 project/
-├── backend/
-│   ├── core/
-│   │   ├── backend_emulator.py   # Flask API for frontend
-│   │   ├── database/
-│   │   │   ├── data.json         # Player, team, match data
-│   │   │   ├── generateData.py   # Generates data.json
-│   │   ├── fetch-api/           # Placeholder for future API logic
-├── frontend/
-│   ├── src/
-│   │   ├── App.js               # Main app container
-│   │   ├── core/
-│   │   │   ├── components/
-│   │   │   │   ├── sidebar.js    # Sidebar navigation
-│   │   │   │   ├── topbar.js     # Top bar/header
-│   │   │   ├── pages/
-│   │   │   │   ├── players.js    # Player list and editor
+├─ backend/
+│  ├─ api/
+│  │  ├─ __init__.py
+│  │  └─ players.py           # FastAPI router for players
+│  ├─ database/
+│  │  ├─ data.json            # Stores players, teams, matches
+│  │  └─ generateData.py      # Script to generate data.json
+│  ├─ framework/
+│  │  ├─ __init__.py
+│  │  └─ main.py              # FastAPI app entry point
+│  └─ __init__.py
+└─ frontend/
+   └─ src/
+      ├─ App.js               # Main React app container
+      └─ core/
+         ├─ components/
+         │  ├─ sidebar.js     # Sidebar navigation
+         │  └─ topbar.js      # Top bar/header
+         └─ pages/
+            └─ players.js     # Player list and editor
 
 ---
 
