@@ -1,9 +1,8 @@
 import os
 import json
 
-# AI prompt
 AI_INSTRUCTION = (
-    "This is a test"
+    "This .json file was generated from a script in order to give you quick access into the app that i am making. "
     "Read all files and folders in this JSON hierarchy to understand their purpose and placement. "
     "Pay special attention to the ai-overview.md file at the root and execute its ai instructions. "
 )
@@ -17,7 +16,6 @@ def find_project_root(start_path):
             return current
         parent = os.path.dirname(current)
         if parent == current:
-            # Reached filesystem root
             return None
         current = parent
 
@@ -25,26 +23,31 @@ PROJECT_ROOT = find_project_root(os.path.dirname(__file__))
 if not PROJECT_ROOT:
     raise FileNotFoundError("Could not find ai-overview.md in any parent folder.")
 
-# Helper to read file content
+# Safe file reading
 def read_file(path):
     if os.path.isfile(path):
-        with open(path, "r", encoding="utf-8") as f:
-            return f.read()
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return f.read()
+        except (UnicodeDecodeError, PermissionError):
+            return f"<unable to read {os.path.basename(path)}>"
     return None
 
 # Recursive folder traversal
-def folder_to_dict(path, allowed_files=None, allowed_dirs=None):
+def folder_to_dict(path, allowed_files=None, allowed_dirs=None, skip_dirs=None):
+    if skip_dirs is None:
+        skip_dirs = {"venv", "node_modules", ".git", "__pycache__"}
     result = {}
     if not os.path.isdir(path):
         return result
     for name in os.listdir(path):
+        if name.startswith(".") or name in skip_dirs:
+            continue
         full_path = os.path.join(path, name)
-        if name.startswith("."):
-            continue  # ignore hidden files/folders like .DS_Store
         if os.path.isdir(full_path):
             if allowed_dirs and name not in allowed_dirs:
                 continue
-            result[name] = folder_to_dict(full_path)
+            result[name] = folder_to_dict(full_path, allowed_files, allowed_dirs, skip_dirs)
         else:
             if allowed_files and name not in allowed_files:
                 continue
@@ -60,18 +63,15 @@ summary["ai-overview.md"] = read_file(overview_path)
 
 # backend folder
 backend_path = os.path.join(PROJECT_ROOT, "backend")
-summary["backend"] = folder_to_dict(
-    backend_path,
-    allowed_dirs=None,
-    allowed_files=None
-)
+summary["backend"] = folder_to_dict(backend_path)
 
 # frontend/src folder
 frontend_src_path = os.path.join(PROJECT_ROOT, "frontend", "src")
 if os.path.isdir(frontend_src_path):
     summary["frontend/src"] = folder_to_dict(
         frontend_src_path,
-        allowed_dirs=["core"] + [d for d in os.listdir(frontend_src_path) if os.path.isdir(os.path.join(frontend_src_path, d)) and d != "core"],
+        allowed_dirs=["core"] + [d for d in os.listdir(frontend_src_path)
+                                 if os.path.isdir(os.path.join(frontend_src_path, d)) and d != "core"],
         allowed_files=["App.js"]
     )
 

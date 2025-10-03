@@ -1,14 +1,16 @@
 import React from 'react';
 import { Drawer, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
 import GroupIcon from '@mui/icons-material/Group';
-import LeagueIcon from '@mui/icons-material/EmojiEvents';
+import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 
-export default function SidebarNav({ setCurrentPage }) {
+export default function Sidebar({ setCurrentPage }) {
   const sidebarItems = [
+    { name: 'Main', icon: <HomeIcon /> },
     { name: 'Players', icon: <PersonIcon /> },
     { name: 'Teams', icon: <GroupIcon /> },
-    { name: 'Leagues', icon: <LeagueIcon /> }
+    { name: 'Matches', icon: <SportsSoccerIcon /> }
   ];
 
   return (

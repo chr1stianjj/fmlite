@@ -1,41 +1,36 @@
 import React, { useState } from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import TopBar from './core/components/topbar';
 import Sidebar from './core/components/sidebar';
 import Players from './core/pages/players';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('Players');
+  const [currentPage, setCurrentPage] = useState('Main');
+  const drawerWidth = 240;
 
-  const drawerWidth = 240; // must match Sidebar width
+  let pageContent;
+  if (currentPage === 'Players') {
+    pageContent = <Players />;
+  } else {
+    pageContent = <div>Main page (empty)</div>;
+  }
 
   return (
     <div>
-      {/* Top Bar */}
       <TopBar />
-
       <Box sx={{ display: 'flex' }}>
-        {/* Permanent Sidebar */}
         <Sidebar setCurrentPage={setCurrentPage} />
-
-        {/* Main content */}
         <Box
           component="main"
           sx={{
             flexGrow: 1,
             p: 4,
-            marginLeft: `${drawerWidth}px`, // offset so content is not behind sidebar
+            marginLeft: `${drawerWidth}px`,
             minHeight: '100vh',
             backgroundColor: '#f9f9f9'
           }}
         >
-          {currentPage === 'Players' ? (
-            <Players />
-          ) : (
-            <Typography variant="h6" sx={{ mt: 4 }}>
-              {currentPage} page under development
-            </Typography>
-          )}
+          {pageContent}
         </Box>
       </Box>
     </div>
