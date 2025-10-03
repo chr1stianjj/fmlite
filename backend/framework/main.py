@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from backend.api import players
+from backend.api.players_router import router as players_router
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="Backend Sandbox")
@@ -14,4 +14,4 @@ app.add_middleware(
 )
 
 # Include the players router
-app.include_router(players.router, prefix="/players")
+app.include_router(players_router, prefix="/players")

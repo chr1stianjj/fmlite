@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box } from '@mui/material';
 import TopBar from './core/components/topbar';
 import Sidebar from './core/components/sidebar';
-import Players from './core/pages/players';
+import PlayerList from './core/pages/player_list'; // updated import
 
 function App() {
   const [currentPage, setCurrentPage] = useState('Main');
@@ -10,7 +10,7 @@ function App() {
 
   let pageContent;
   if (currentPage === 'Players') {
-    pageContent = <Players />;
+    pageContent = <PlayerList />; // updated reference
   } else {
     pageContent = <div>Main page (empty)</div>;
   }
