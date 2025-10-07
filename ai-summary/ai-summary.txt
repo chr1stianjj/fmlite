@@ -1,0 +1,51 @@
+This entire text was run from fmlite/ai-summary/createSummary.py and turned into a text message you are now seeing.
+What you see here is an overview of the 'fmlite' project’s source code and documented file purposes written in the author's own words.
+The purposes are stored in a separate purpose.json file in the same folder as the script and is updated by me as i learn more about development in general, as i am still a beginner.
+Files marked 'PURPOSE_NOT_DEFINED' have no documented purpose yet.
+
+After reading this text in full, write back the total number of PURPOSE_NOT_DEFINED files, and explain in 125 words or less a summary about how you think the project is structured.
+
+fmlite/
+├─ backend/
+│  ├─ __init__.py : Python package initializer
+│  ├─ api/
+│  │  ├─ __init__.py : Python package initializer
+│  │  └─ players_router.py : This is the file that contains the API to retrieve player data from backend. At the moment just returns either all players or a specific player by ID.
+│  ├─ database/
+│  │  ├─ data.json : Mock database which will get replaced at some point. Contains sample data for players, teams, and matches.
+│  │  ├─ generateData.py : Just a simple script to populate my mock database (data.json)
+│  │  └─ queries/
+│  │     ├─ __init__.py : Python package initializer
+│  │     └─ players_query.py : Functions to query player data from the mock database (data.json). This should be replaced with real database queries in the future.
+│  └─ framework/
+│     ├─ __init__.py : Python package initializer
+│     └─ main.py : This is supposed to hold all of my fast API stuff and create all the endpoints from my API folder i think
+└─ frontend/
+   └─ src/
+      ├─ app.js : This is the main react (frontend) application file that boots up my front page. (i think)
+      └─ core/
+         ├─ components/
+         │  ├─ sidebar.js : The left-hand sidebar navigation visible at all times on the left side of the screen. For now contains every menu, but maybe i should split this out into a subfolder
+         │  └─ topbar.js : The top-bar which contains the logo and maybe some other stuff later. Contains no logic atm, just styling
+         └─ pages/
+            ├─ player_list.js : Displays a list of players with search and filter features
+            └─ player_view.js : Shows detailed view of an individual player
+
+--- TECH STACK (frontend & backend) ---
+Frontend/
+├─ ├─ Framework: React ^19.2.0
+├─ ├─ UI library: @mui/material ^7.3.4
+├─ ├─ HTTP client: 
+├─ ├─ Bundler / Scripts:
+├─ │  ├─ start: react-scripts start
+├─ │  ├─ build: react-scripts build
+├─ │  ├─ test: react-scripts test
+├─ │  └─ eject: react-scripts eject
+
+Backend/
+├─ ├─ Language: Python 3.x
+├─ ├─ Framework: 
+├─ ├─ ORM / DB tools: 
+├─ ├─ Scripts / Entrypoints:
+├─ │  ├─ main.py: application entry
+├─ │  └─ generateData.py: data generation
