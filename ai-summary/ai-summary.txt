@@ -3,7 +3,7 @@ What you see here is an overview of the 'fmlite' project’s source code and doc
 The purposes are stored in a separate purpose.json file in the same folder as the script and is updated by me as i learn more about development in general, as i am still a beginner.
 Files marked 'PURPOSE_NOT_DEFINED' have no documented purpose yet.
 
-After reading this text in full, write back the total number of PURPOSE_NOT_DEFINED files, and explain in 125 words or less a summary about how you think the project is structured.
+After reading this text in full, write back the total number of PURPOSE_NOT_DEFINED files, and explain in 125 words or less a summary of what this project is about and what it does.
 
 fmlite/
 ├─ backend/
